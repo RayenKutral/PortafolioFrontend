@@ -1,0 +1,61 @@
+.contenedor{
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+   }
+   .row{
+      margin: 0%;
+   }
+
+#logoAP {
+   width: 150px;   
+   padding: 3px; 
+   margin: 10px;
+   margin-top: 10px;
+   margin-left: 0.5cm;
+   border-radius: 10px;
+   overflow: none;
+   transition: none;
+   transform: none;
+   background: none;
+}
+
+img{
+   width: 40px;
+   padding: 4px; 
+   border-radius: 30%;
+   margin: 0.5px; 
+   transition: .2s ease all;
+   overflow:hidden;
+  } 
+
+img:hover{
+   background-color: #c7c7c79a;  
+   -webkit-transform:scale(1.3);transform:scale(1.1);
+      }
+
+.btnIngreso{
+   margin: 10px;
+   border: 2px solid burlywood;
+   color: burlywood;
+   font-weight: 500;
+  }
+  .btnIngreso:hover{
+   background-color: #8b560f9a;
+   color: rgb(255, 255, 255);
+  }
+
+
+
+  /*---vista celular---*/
+  @media (max-width:575px){
+  .contenedor{
+   flex-direction: column;
+  }  
+  .redes{
+   flex-direction: column;
+   align-items: center;
+   display: flex;
+  }
+
+    }

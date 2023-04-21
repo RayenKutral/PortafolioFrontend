@@ -1,0 +1,19 @@
+.row{
+    background-color: #fddfb2;
+    padding: 20px;
+    margin: 0%;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+circle-progress{
+    cursor: pointer;
+   
+}
+

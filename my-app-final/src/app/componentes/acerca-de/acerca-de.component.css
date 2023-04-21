@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+.row{
+    padding: 20px;
+    margin: 0%;
+} 
+
+div{
+    text-align: center;
+    background-color:rgb(172, 131, 102) ;
+}
+
+
+
+#titl{
+    font-family: 'Dongle', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+h1{
+    font-family: 'Dongle', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#texto{
+    font-family: 'Lora', serif;
+    font-size: 15px;
+}
+/*estilo foto perfil*/
+
+@media (min-width: 576px){
+    #fotoPerfil {
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left:3%;
+        top: 350px;
+    }
+    }
+
+ @media (max-width: 575px){
+        #fotoPerfil {
+            position: absolute;
+            width: 25%;
+            border-radius: 100%;
+            box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.678);
+            left:36%;
+            top: 275px;
+        }
+        }
+      
+              @media (min-width: 1200px){
+                #fotoPerfil {
+                    position: absolute;
+                    width: 12%;
+                    border-radius: 100%;
+                    box-shadow: 3px 3px 3px grey;
+                    left:3%;
+                    top: 530px;
+                }
+                }
+           
+            @media (max-width:575px){
+                  #nombre{
+                    font-family: 'Merriweather', serif;
+                    font-weight: bold;
+                    margin-top: 23%;
+                    font-size: 18px;
+                    left: 10px;
+                  }
+            }
+            @media (min-width:565px){
+                #nombre{
+                  font-family: 'Merriweather', serif;
+                  font-weight: bold;
+                  margin-top: 10%;
+                  font-size: 18px;
+                  left: 10px;
+                }
+          }
+
+            
+
+
+ 
+
+
