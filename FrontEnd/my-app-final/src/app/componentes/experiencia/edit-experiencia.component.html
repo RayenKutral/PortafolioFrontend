@@ -1,0 +1,27 @@
+<section class="gradient-custom">
+    <div class="container-fluid" *ngIf="expLab">
+        <div class="row">
+            <div>
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="card text-white" style="border-radius: 1rem; background-color: rgba(235, 185, 138, 0.541);" id="caja">
+                        <div class="card-body p-5 text-center">
+                            <div class="mb-md-5 mt-md-4 pb-5">
+                    <div class="form-outline">
+                        <label for="nombreE" class="from-label">Nombre de la empresa</label>
+                        <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="expLab.nombreE" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcionE">Descripcion de la tarea</label>
+                        <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="expLab.descripcionE" required>
+                    </div>
+                    <button class="btn btn-outline-light">
+                        Actualizar 
+                    </button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>

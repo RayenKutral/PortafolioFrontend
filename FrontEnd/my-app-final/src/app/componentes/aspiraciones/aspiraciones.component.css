@@ -1,0 +1,17 @@
+.row {
+    padding:20px;
+    background-color: #fce99c;
+    margin: 0%;
+}
+h1{
+    font-family: 'Lora', serif;
+font-size: 40px;
+font-weight: bold;
+padding-left: 15px;
+}
+p{
+    padding-left:40px;
+    margin-top: 10px;
+    font-size: 25px;
+   font-family: 'Lora', serif;;
+ }

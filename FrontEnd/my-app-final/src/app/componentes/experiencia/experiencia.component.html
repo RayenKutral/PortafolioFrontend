@@ -1,10 +1,24 @@
 <div class="row">
-    <h1>Educación</h1>
-  <div class="col-lg-11">
-    <ul>
-        <li><h2>Secundario</h2><h3>-(2010-2016)</h3><p>Secundario completo, Instituto Don José de San Martín, Fcio. Varela, Buenos Aires.</p></li>
-        <li><h2>Inglés</h2><h3>-(2007-2015)</h3><p>Heller's Institute. Kinder to 5th year.</p></li>
-        <li><h2>Programación</h2><h3>-(2022-2023)</h3><p>Curso '#SeProgramar' y '#YoProgramo', Argentina Programa.</p></li>
-    </ul>
+      <div class="container-fluid" style="display: flex; justify-content: space-between;">
+            <h1>Experiencia Laboral</h1>            
+        <button type="button" class="btn btn-outline-dark btn-sm" routerLink="/nuevaexp" *ngIf="isLogged">Nueva experiencia</button>
+      </div>
+      <div class="container">
+       
+        <div class="table-responsive">
+         <table class="table align-middle">       
+           <tbody>
+            <tr *ngFor="let Experiencia of expe">
+                <td class="nombreExp">{{Experiencia.nombreE}}</td>
+                <td class="descripcionExp">{{Experiencia.descripcionE}}</td>
+                <td *ngIf="isLogged"><button class="btn btn-outline-dark btn-sm"  routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged"><i class="bi bi-pencil-square"></i></button></td>
+                <td *ngIf="isLogged"><button class="btn btn-outline-danger" (click)="delete(Experiencia.id)" *ngIf="isLogged"><i type="button" class="bi bi-trash"></i></button></td>
+            </tr>
+        </tbody>
+       </table>
+     </div>
+    </div>
   </div>
-</div>
+
+
+    

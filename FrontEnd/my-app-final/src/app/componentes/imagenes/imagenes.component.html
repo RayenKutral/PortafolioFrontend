@@ -1,3 +1,6 @@
+<!--- COMPONENTE IMAGENES == LOGO AP, INGRESO y BOTONES - REDES SOCIALES -->
+
+
 <div class="row">
     <div class="contenedor">
         <div class="logoAp">
@@ -8,7 +11,8 @@
             <a href="https://www.facebook.com/Floo.vega15" target="_blank"><img src="../../../assets/facebook (1).png"></a>
             <a href="https://www.instagram.com/florrayenkutral/" target="_blank"><img src="../../../assets/instagram.png"></a>
             <a href="https://github.com/RayenKutral" target="_blank"><img src="../../../assets/github.png"></a>
-            <button type="button" class="btn btn-outline-primary btnIngreso">Ingreso</button>
+              <button type="button" class="btn btn-outline-primary btnIngreso" (click)="login()" *ngIf="!IsLogged">Ingreso</button>
+              <button type="button" class="btn btn-outline-primary btnIngreso" (click)="onLogOut()" *ngIf="IsLogged">Cerrar sesión</button>
       </section>
     </div>
   </div>

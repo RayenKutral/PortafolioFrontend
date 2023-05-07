@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="container-fluid" style="display: flex; justify-content: space-between;">
+        <h1>Educación</h1>            
+    <button type="button" class="btn btn-outline-dark btn-sm" routerLink="/nuevoest" *ngIf="isLogged">Nuevo estudio</button>
+  </div>
+  <div class="container">
+   
+    <div class="table-responsive">
+     <table class="table table-sm align-middle">       
+       <tbody>
+        <tr *ngFor="let Estudios of est">
+            <td class="nombreExp">{{Estudios.nombreE}}</td>
+            <td class="descripcionExp">{{Estudios.descripcionE}}</td>
+            <td *ngIf="isLogged"><button class="btn btn-outline-dark btn-sm"  routerLink="/editest/{{Estudios.id}}" *ngIf="isLogged"><i class="bi bi-pencil-square"></i></button></td>
+            <td *ngIf="isLogged"><button class="btn btn-outline-danger" (click)="delete(Estudios.id)" *ngIf="isLogged"><i type="button" class="bi bi-trash"></i></button></td>
+        </tr>
+    </tbody>
+   </table>
+ </div>
+</div>
+</div>
+
+

@@ -36,7 +36,7 @@ img:hover{
 
 .btnIngreso{
    margin: 10px;
-   border: 2px solid burlywood;
+   border: none;
    color: burlywood;
    font-weight: 500;
   }
