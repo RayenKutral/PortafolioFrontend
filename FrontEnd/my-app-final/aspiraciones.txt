@@ -1,2 +1,93 @@
-En la actualidad con las nuevas tecnologias se abre un amplio campo laboral del cual es necesario conocer y dominar. 
-A partir de los conocimientos adquiridos espero poder mejorar mis habilidades y conocimientos digitales que me permita ser un profesional innovador y creativo y asi ser parte de ese campo laboral.
+   <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+      [percent]="85"
+      [radius]="80"
+      [title]="'CSS'"
+      [showUnits]="false"
+      [showSubtitle]="false"
+      [showImage]="true"
+      [imageSrc]="'../assets/css-3.png'"
+      [imageHeight]="50"
+      [imageWidth]="50"
+      [outerStrokeWidth]="10"
+      [innerStrokeWidth]="3"
+      [outerStrokeColor]="'#89543D'"
+      [innerStrokeColor]="'#CE8651'"
+      [animation]="true"
+      [animationDuration]="750"
+    ></circle-progress>
+        </div>  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+            <circle-progress
+          [percent]="75"
+          [radius]="80"
+          [title]="'JS'"
+          [imageSrc]="'../assets/js.png'"
+          [showImage]="true"
+          [imageHeight]="50"
+          [imageWidth]="50"
+          [showUnits]="false"
+          [showSubtitle]="false"
+          [outerStrokeWidth]="10"
+          [innerStrokeWidth]="3"
+          [outerStrokeColor]="'#89543D'"
+          [innerStrokeColor]="'#CE8651'"
+          [animation]="true"
+          [animationDuration]="750"
+        ></circle-progress>
+            </div>  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+                <circle-progress
+              [percent]="60"
+              [radius]="80"
+              [title]="'GitHub'"              
+          [imageSrc]="'../assets/github2.png'"
+          [showImage]="true"
+          [imageHeight]="50"
+          [imageWidth]="50"
+              [showUnits]="false"
+              [showSubtitle]="false"
+              [outerStrokeWidth]="10"
+              [innerStrokeWidth]="3"
+              [outerStrokeColor]="'#89543D'"
+              [innerStrokeColor]="'#CE8651'"
+              [animation]="true"
+              [animationDuration]="750"
+            ></circle-progress>
+                </div>  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+                    <circle-progress
+                  [percent]="70"
+                  [radius]="80"
+                  [title]="'Inglés'"                  
+          [imageSrc]="'../assets/literatura.png'"
+          [showImage]="true"
+          [imageHeight]="50"
+          [imageWidth]="50"
+                  [showUnits]="false"
+                  [showSubtitle]="false"
+                  [outerStrokeWidth]="10"
+                  [innerStrokeWidth]="3"
+                  [outerStrokeColor]="'#89543D'"
+                  [innerStrokeColor]="'#CE8651'"
+                  [animation]="true"
+                  [animationDuration]="750"
+                ></circle-progress>
+                    </div>
+                    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+                        <circle-progress
+                      [percent]="100"
+                      [radius]="80"
+                      [title]="'Trabajo Grupal'"                      
+          [imageSrc]="'../assets/unido.png'"
+          [showImage]="true"
+          [imageHeight]="50"
+          [imageWidth]="50"
+                      [showUnits]="false"
+                      [showSubtitle]="false"
+                      [outerStrokeWidth]="10"
+                      [innerStrokeWidth]="3"
+                      [outerStrokeColor]="'#89543D'"
+                      [innerStrokeColor]="'#CE8651'"
+                      [animation]="true"
+                      [animationDuration]="750"
+                    ></circle-progress>
+                        </div>
+</div>

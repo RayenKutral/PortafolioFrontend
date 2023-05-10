@@ -28,6 +28,12 @@ h1{
     font-family: 'Lora', serif;
     font-size: 15px;
 }
+button{
+    border-radius: 20px;
+    border: 0px;
+    font-weight: bolder;
+}
+
 /*estilo foto perfil*/
 
 @media (min-width: 576px){

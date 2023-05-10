@@ -7,7 +7,9 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class SEstudiosService {
-  expURL = 'https://backendmfv.onrender.com/estudios/'
+  
+  expURL = 'http://localhost:8080/estudios/'
+  //'https://backenddmfv.onrender.com/estudios/'
 
 
   constructor(private httpClient: HttpClient) {}

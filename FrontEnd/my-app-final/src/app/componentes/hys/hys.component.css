@@ -16,4 +16,8 @@ circle-progress{
     cursor: pointer;
    
 }
-
+button{
+    border-radius: 20px;
+    border: 0px;
+    font-weight: bolder;
+}
