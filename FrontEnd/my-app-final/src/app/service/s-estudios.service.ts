@@ -8,8 +8,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SEstudiosService {
   
-  expURL = 'http://localhost:8080/estudios/'
-  //'https://backenddmfv.onrender.com/estudios/'
+  expURL = //'http://localhost:8080/estudios/'
+  'https://backenddmfv.onrender.com/estudios/'
 
 
   constructor(private httpClient: HttpClient) {}

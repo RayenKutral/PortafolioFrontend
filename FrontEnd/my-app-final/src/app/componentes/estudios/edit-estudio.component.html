@@ -1,6 +1,8 @@
 <section class="gradient-custom">
-    <div class="container-fluid" *ngIf="estu">
+    <div class="container-fluid" *ngIf="estu">   
+        <button class="btn btn-outline-light " style="margin-left: 70px;" routerLink=""><i class="bi bi-arrow-left-square-fill" ></i> Volver</button>     
         <div class="row">
+            
             <div>
                 <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                     <div class="card text-white" style="border-radius: 1rem; background-color: rgba(235, 185, 138, 0.541);" id="caja">

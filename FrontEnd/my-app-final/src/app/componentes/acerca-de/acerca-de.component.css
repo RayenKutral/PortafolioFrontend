@@ -21,7 +21,7 @@ div{
 h1{
     font-family: 'Dongle', sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 #texto{
@@ -31,19 +31,20 @@ h1{
 button{
     border-radius: 20px;
     border: 0px;
-    font-weight: bolder;
+    font-weight: bolder;    
 }
 
+.acerca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*estilo foto perfil*/
 
 @media (min-width: 576px){
-    #fotoPerfil {
-        position: absolute;
-        width: 15%;
+    #fotoPerfil {        
         border-radius: 100%;
-        box-shadow: 3px 3px 3px grey;
-        left:3%;
-        top: 350px;
+        box-shadow: 3px 3px 3px grey;      
     }
     }
 
@@ -54,8 +55,8 @@ button{
             border-radius: 100%;
             box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.678);
             left:36%;
-            top: 275px;
-        }
+            top: 230px;
+        }      
         }
       
               @media (min-width: 1200px){
@@ -65,7 +66,7 @@ button{
                     border-radius: 100%;
                     box-shadow: 3px 3px 3px grey;
                     left:3%;
-                    top: 530px;
+                    top: 550px;
                 }
                 }
            
@@ -83,7 +84,7 @@ button{
                   font-family: 'Merriweather', serif;
                   font-weight: bold;
                   margin-top: 10%;
-                  font-size: 18px;
+                  font-size: 25px;
                   left: 10px;
                 }
           }

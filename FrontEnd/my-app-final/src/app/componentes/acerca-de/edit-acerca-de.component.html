@@ -1,13 +1,14 @@
 <section class="gradient-custom" *ngIf="persona">
     <div class="container-fluid">
+        <button class="btn btn-outline-light " style="margin-left: 70px;" routerLink=""><i class="bi bi-arrow-left-square-fill" ></i> Volver</button>
         <div class="row">
-                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <form (ngSubmit)="onUpdate()" #f="ngForm">
                     <div class="card text-white" style="border-radius: 1rem; background-color: rgba(235, 185, 138, 0.541);" id="caja">
                         <div class="card-body p-5 text-center">
                             <div class="mb-md-5 mt-md-4 pb-5">
 
                     <div class="form-outline">
-                        <label for="nombreE" class="from-label">Nombre</label>
+                        <label for="nombre" class="from-label">Nombre</label>
                         <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
                     </div>
 
@@ -26,8 +27,9 @@
                         <input type="file" class="form-control" id="img" name="img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png, .bmp, .gif, .tiff">
                     </div>
                    <div class="imagen">
-<img [src]="imageService.url" width="200px">
+                              <img [src]="imageService.url" width="200px">
                    </div>
+
                     <button class="btn btn-outline-light">
                         Actualizar 
                     </button>

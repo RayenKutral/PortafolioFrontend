@@ -9,7 +9,9 @@ import { PersonaService } from 'src/app/service/persona.service';
   templateUrl: './edit-acerca-de.component.html',
   styleUrls: ['./edit-acerca-de.component.css']
 })
+
  export class EditAcercaDeComponent implements OnInit{
+
 persona: persona = null;
 
 constructor (private activatedRouter: ActivatedRoute, 
@@ -19,9 +21,10 @@ constructor (private activatedRouter: ActivatedRoute,
 
 ngOnInit(){
   const id = this.activatedRouter.snapshot.params['id'];
-  this.personaService.detail(id).subscribe({ next:
+  this.personaService.detail(1).subscribe({ next:
     (data) => {
       this.persona = data;
+       
   }, error: (err) =>{
       alert("Error al modificar");
       this.router.navigate(['']);
@@ -31,15 +34,18 @@ ngOnInit(){
 
 onUpdate(){
   const id = this.activatedRouter.snapshot.params['id'];
-    this.personaService.update(id, this.persona).subscribe({next:
-      (data) => {
+  this.persona.img = this.imageService.url
+    this.personaService.update(id, this.persona).subscribe(
+      data => {
         this.router.navigate(['']);
-      },error: (err) =>{
+        console.log(data); 
+      }, err =>{
          alert("Error al modificar");
          this.router.navigate(['']);
       }
-  })
+  )
 }
+
 
 uploadImage($event: any ){
   const id = this.activatedRouter.snapshot.params['id'];

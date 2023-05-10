@@ -9,8 +9,8 @@ import { persona } from '../model/persona.model';
 
 export class PersonaService {
 
- URL = 'http://localhost:8080/personas/'
- //'https://backenddmfv.onrender.com/personas/';
+ URL = //'http://localhost:8080/personas/'
+ 'https://backenddmfv.onrender.com/personas/'
 
   constructor(private httpClient: HttpClient) { }
   public lista(): Observable<persona[]>{    
@@ -23,7 +23,7 @@ export class PersonaService {
 
 
   public update(id: number, Persona: persona): Observable<any>{
-    return this.httpClient.put<any>(this.URL+`update/${id}`, persona);
+    return this.httpClient.put<any>(this.URL+`update/${id}`, Persona);
   }
 }
 
